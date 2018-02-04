@@ -1,0 +1,353 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: gray;
+}
+
+
+.site-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.progressbar {
+    position: fixed;
+    top: 0;
+    height: 10px;
+    background-color: darkgray;
+    z-index: 20;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    z-index: 10;
+    transition: all 1s;
+}
+
+.scroll {
+    background-color: rgba(23, 162, 184, 0.54);
+}
+
+.navbar-brand {
+    font-family: Droid Serif, sans-serif;
+    color: white;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active > .nav-link {
+    color: white;
+    font-family: Monstserrat, sans-serif;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.navbar .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link:hover {
+    color: #17a2b8;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Monstserrat Serif, sans-serif;
+    color: black;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+
+
+h2 {
+    font-size: 2em;
+    color: white;
+
+}
+
+
+h1 {
+    font-size: 4em;
+    color: white;
+}
+
+
+h3 {
+    text-transform: uppercase;
+    font-family: Roboto serif, sans-serif;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: Droid serif, sans-serif;
+    color: gray;
+}
+
+h5 {
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-family: Droid serif;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+header {
+    color: white;
+    height: 100vh;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header/pictures_on_the_wall.jpg);
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+
+}
+
+#inner-head {
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+section {
+    flex-basis: 100%;
+    padding: 100px 0;
+}
+
+.row .icon {
+    text-align: center;
+    line-height: 70px;
+    font-size: 3em;
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: #17a2b8;
+    border-radius: 50%;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.row .icon:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+
+
+.icon-div {
+    text-align: center;
+}
+
+
+#inner-services {
+    text-align: center;
+}
+
+#porfolio {
+    background-color: lightgray;
+}
+
+#portfolio-inner {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.port-it-out {
+    padding: 10px 10px;
+}
+
+
+.portfolio-item {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+    padding: 0;
+    transition: all 1s;
+}
+
+.portfolio-item::before {
+    content: '+';
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(23, 162, 184, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.portfolio-item:hover:before {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(23, 162, 184, 0.4);
+}
+
+.por-head {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+
+}
+
+#por-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#por-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#por-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#por-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#por-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#por-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#inner-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.team-member {
+    text-align: center;
+}
+
+.memb-pic {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#memb-1 {
+    background-image: url(../img/team/man-1.jpg);
+}
+
+#memb-2 {
+    background-image: url(../img/team/man-2.jpg);
+}
+
+#memb-3 {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+.social-icons i {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 10px;
+    margin-bottom: 30px;
+    transition: all .2s;
+}
+
+.social-icons i:hover {
+    background-color: #17a2b8;
+}
+
+
+#contact {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/footer/world-map.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact h3,
+#contact h4 {
+    color: white;
+}
+
+
+#form-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+textarea {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    box-shadow: none;
+    resize: vertical;
+    margin-top: 30px;
+
+}
+
+.inputs {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.inputs input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+#inner-contact {
+    text-align: center;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-left: 10px;
+}
